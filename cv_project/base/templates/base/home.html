@@ -1,0 +1,40 @@
+{% extends 'base/main.html' %}
+
+{% load static %}
+{% block static %}
+    <link rel="stylesheet" href="{% static 'base/css/home.css' %}">
+    <script defer src="{% static 'base/js/carousel.js' %}"></script>
+{% endblock static %}
+
+{% block content %}
+  <!-- main wrapper -->
+  <div class="main-wrapper">
+
+    <div class="wrapper-left">
+      <div class="top-text">
+        Create CV, upload & find your dream job. Look for employees for your team!
+      </div>
+
+      <div class="sub-text">
+        Easy to use website for creating, sharing and searching for CV's
+      </div>
+
+      <div class="register-button2">
+        Start Now
+      </div>
+    </div>
+
+    <div class="wrapper-right">
+
+      <div class="carousel">
+        <div class="nav">
+          <button type="button" name="button" class="prev-button">&#60;</button>
+          <button type="button" name="button" class="next-button">&#62;</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- END main wrapper -->
+{% endblock content %}

@@ -1,0 +1,104 @@
+/* general ------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: linear-gradient(135deg ,#2d8ea3, #d7c2b4);
+  min-height: 100vh;
+}
+
+/* END general ------------------------------ */
+
+/* navigation ------------------------------- */
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  color: white;
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left,
+.nav-right {
+  width: 25%;
+  min-width: fit-content;
+  justify-content: center;
+}
+
+.nav-left {
+  font-size: 1.6rem;
+  text-shadow: 4px 3px 5px black;
+}
+  .nav-left .logo {
+    cursor: pointer
+  }
+
+.nav-center {
+  width: 50%;
+}
+  .nav-center ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+    .nav-center ul li {
+      font-size: 1.1rem;
+      margin: 0 5%;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition-duration: 0.15s;
+    }
+      .nav-center ul li:hover {
+        text-shadow: 2px 2px 4px black;
+        transform: scale(1.05);
+      }
+        .nav-center ul li a {
+          font-family: Roboto;
+        }
+
+
+.nav-right .register-button {
+  font-variant: small-caps;
+  color: black;
+  background-color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition-duration: 0.15s;
+  margin: 0 5px;
+}
+  .nav-right .register-button:hover {
+    box-shadow: 2px 2px 6px grey;
+  }
+
+.nav-right .sign-in-button {
+  background-color: red;
+  padding: 5px 20px;
+  border-radius: 2px;
+  transition-duration: 0.15s;
+  cursor: pointer;
+}
+  .nav-right .sign-in-button:hover {
+    box-shadow: 2px 2px 6px grey;
+  }
+/* END navigation ------------------------------- */
