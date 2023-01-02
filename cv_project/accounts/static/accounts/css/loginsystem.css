@@ -1,0 +1,87 @@
+.main-wrapper {
+    padding-top: 20vh;
+}
+
+form {
+  box-shadow: 0 0 0 max(100vh, 100vw) rgba(0, 0, 0, .5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  max-width: 450px;
+  min-height: 50%;
+  background-color: #f8efe5;
+  border-radius: 25px;
+  padding: 25px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+  form .inline {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+    align-items: center;
+  }
+
+    form .inline label {
+      width: 40%;
+    }
+
+    form .inline input {
+      width: 60%;
+      padding: 5px;
+      outline-style: none;
+    }
+
+  .error {
+    padding-left: 40%;
+    font-size: 0.9rem;
+    color: red;
+    height: 0.9rem;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 3px grey;
+  }
+
+  form button {
+    font-size: 1.1rem;
+    margin: 10px auto;
+    width: fit-content;
+    color: black;
+    background-color: #ebc8b5;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition-duration: 0.15s;
+    margin-top: 20px;
+  }
+  form button:hover {
+    box-shadow: 3px 3px 3px grey;
+    transform: scale(1.05);
+  }
+  form a {
+    font-size: 0.9rem;
+    width: fit-content;
+    margin: 0 auto;
+    transition-duration: 0.15s;
+    text-align: center;
+  }
+  form a:hover {
+    color: brown;
+  }
+
+  .exit {
+    position: absolute;
+    right: 25px;
+    font-size: 2rem;
+  }
+
+  .info {
+    font-size: 0.9rem;
+    color: red;
+    text-align: center;
+  }
